@@ -6,7 +6,8 @@ import haikuSrc from './haiku';
     .component('haiku', {
       templateUrl: './templates/haiku.html',
       controller: function HaikuController() {
-        this.haiku = haikuSrc.haiku;
+        // wierd transpiler stuff happening here...
+        this.haiku = haikuSrc.haikuSrc;
       }
     });
 })();
