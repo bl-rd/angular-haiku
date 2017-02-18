@@ -1,3 +1,12 @@
-import haiku from './haiku';
+import angular from 'angular';
+import haikuSrc from './haiku';
 
-console.log('haiku', haiku);
+(function() {
+  angular.module('haiku', [])
+    .component('haiku', {
+      templateUrl: './templates/haiku.html',
+      controller: function HaikuController() {
+        this.haiku = haikuSrc.haiku;
+      }
+    });
+})();

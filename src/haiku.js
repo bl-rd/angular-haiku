@@ -1,4 +1,4 @@
-let haiku = [
+let haikuSrc = [
   {
     author: 'Shuson Kato',
     haiku: [
@@ -9,4 +9,4 @@ let haiku = [
   }
 ];
 
-export default { haiku };
+export default { haikuSrc };

@@ -1,0 +1,10 @@
+<div ng-repeat="haiku in $ctrl.haiku">
+  <div class="haiku-text">
+    <span ng-repeat="line in haiku.haiku">
+      {{ line }}<br/>
+    </span>
+  </div>
+    <p class="author">
+      - {{ haiku.author }}
+    </p>
+</div>
