@@ -4,7 +4,19 @@
       {{ line }}<br/>
     </span>
   </div>
-    <p class="author">
-      - {{ haiku.author }}
-    </p>
+  <p class="author">
+    - {{ haiku.author }}
+  </p>
+</div>
+
+<div>
+  <h2>Random Haiku</h2>
+  <div class="haiku-text">
+    <span ng-repeat="line in $ctrl.randomHaiku.haiku">
+      {{ line }}<br/>
+    </span>
+  </div>
+  <p>
+    - {{ $ctrl.randomHaiku.author }}
+  </p>
 </div>
