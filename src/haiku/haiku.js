@@ -1,18 +1,10 @@
-let haikuSrc = [
+export default [
   {
     author: 'Shuson Kato',
     haiku: [
       'I kill an ant',
       'and realise my three children',
-      'have been watching'
-    ]
-  },
-  {
-    author: 'Masaoka Shiki',
-    haiku: [
-      'My life, -',
-      'How much more of it remains?',
-      'The night is brief'
+      'have been watching.'
     ]
   },
   {
@@ -20,7 +12,7 @@ let haikuSrc = [
     haiku: [
       'Don\'t weep, insects -',
       'Lovers, stars themselves',
-      'must part'
+      'must part.'
     ]
   },
   {
@@ -32,5 +24,3 @@ let haikuSrc = [
     ]
   }
 ];
-
-export default { haikuSrc };
