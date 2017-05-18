@@ -6,13 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "jspm install",
-    "start": "browser-sync start --server --browser=firefox"
+    "start": "hs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.8",
+    "http-server": "^0.10.0",
     "jspm": "^0.16.52"
   },
   "jspm": {
