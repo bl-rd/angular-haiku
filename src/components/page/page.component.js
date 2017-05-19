@@ -12,11 +12,16 @@ function pageController() {
 
   this.$onInit = function() {
     self.haiku = haikuSrc();
+    self.selectedHaiku = getRandomHaiku();
   };
 
-  this.getRandomHaiku = function() {
+  this.updateHaiku = function() {
+    self.selectedHaiku = getRandomHaiku();
+  };
+
+  function getRandomHaiku() {
     let random = getRandomIntInclusive(0, self.haiku.length);
-    return this.haiku[random];
+    return self.haiku[random];
   };
 }
 

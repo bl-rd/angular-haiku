@@ -1,4 +1,5 @@
 <p>Page...</p>
 
-<!-- this function shouldn't be called here - try to do in the controller -->
-<haiku data="$ctrl.getRandomHaiku()"></haiku>
+<haiku data="$ctrl.selectedHaiku"></haiku>
+
+<control ng-click="$ctrl.updateHaiku()"></control>
