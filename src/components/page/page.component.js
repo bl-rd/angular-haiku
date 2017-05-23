@@ -1,5 +1,5 @@
 import { getRandomIntInclusive } from '../../helpers';
-import haikuSrc from '../../haikuAggregator';
+import { mergeData } from '../../haikuAggregator';
 
 let page = {
   templateUrl: './src/components/page/page.tmpl.html',
@@ -11,7 +11,7 @@ function pageController() {
   let self = this;
 
   this.$onInit = function() {
-    self.haiku = haikuSrc();
+    self.haiku = mergeData();
     self.selectedHaiku = getRandomHaiku();
   };
 
