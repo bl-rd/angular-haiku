@@ -1,4 +1,4 @@
-let author = 'Kato Shuson';
+let author = 'Shūson Katō';
 
 export default [
   {
