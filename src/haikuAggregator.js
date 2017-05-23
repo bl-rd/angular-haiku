@@ -1,4 +1,4 @@
-// currently mimiking the functionality of a service and an api
+import jsonfile from 'jsonfile';
 import misc from './haiku/haiku';
 import sojo from './haiku/hino-sojo';
 import dakotsu from './haiku/iida-dakotsu';
@@ -39,4 +39,10 @@ function mergeData() {
   return mergedData;
 }
 
-export default mergeData;
+function createJson(path = 'dist/haiku.json') {
+  let file = path;
+  let haiku = mergeData();
+  jsonfile.writeFile(file, haiku, { spaces: 2}, err => console.error(err));
+}
+
+export { mergeData, createJson };

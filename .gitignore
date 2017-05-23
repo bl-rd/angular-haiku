@@ -2,3 +2,5 @@ node_modules/
 
 # this will probably need to be included in production
 jspm_packages/
+
+dist/makeJson.bundle.*

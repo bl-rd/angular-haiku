@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "jspm install",
-    "start": "hs"
+    "serve": "hs",
+    "scss": "node-sass src/scss/main.scss dist/main.css --output-style=compressed -w",
+    "start": "parallelshell \"npm run scss\" \"npm run serve\"",
+    "json": "jspm bundle-sfx dist/makeJson.js dist/makeJson.bundle.js && node dist/makeJson.bundle.js"
   },
   "keywords": [],
   "author": "",
@@ -14,11 +17,14 @@
   "devDependencies": {
     "browser-sync": "^2.18.8",
     "http-server": "^0.10.0",
-    "jspm": "^0.16.52"
+    "jspm": "^0.16.52",
+    "node-sass": "^4.5.3",
+    "parallelshell": "^2.0.0"
   },
   "jspm": {
     "dependencies": {
-      "angular": "github:angular/bower-angular@^1.6.2"
+      "angular": "github:angular/bower-angular@^1.6.2",
+      "jsonfile": "npm:jsonfile@^3.0.0"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
