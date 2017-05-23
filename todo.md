@@ -13,8 +13,8 @@ Going to the app will display a random haiku. The user can interact with the app
 
 ## Nice to have's
 
-- The data for the app will be served via an API
-  - **Idea**: When running locally, serve a .NET core api from localhost (will need to be tied into another application)
-  - When deploying for production, dynamically create the JSON that will be used...
+- The data for the app will be served via an API (Firebase)
+  - ~~**Idea**: When running locally, serve a .NET core api from localhost (will need to be tied into another application)~~
+  - ~~When deploying for production, dynamically create the JSON that will be used...~~
 - Service worker will allow the app to be installed like a native app
-- Testing!
+- Testing! (Protractor | Mocha)
