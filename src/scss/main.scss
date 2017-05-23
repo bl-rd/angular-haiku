@@ -14,7 +14,7 @@ li {
 #main-display {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  // overflow: hidden;
   background: $back;
   display: flex;
   align-items: center;
@@ -25,14 +25,6 @@ li {
 .haiku {
   li {
     font-size: 2rem;
-    transition-duration: 2s;
-    transition-property: top;
-    transition-timing-function: ease-in;
-    margin-top: 100vh;
-
-    &.active {
-      margin-top: 0;
-    }
   }
 
   p {
