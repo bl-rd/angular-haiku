@@ -25,6 +25,14 @@ li {
 .haiku {
   li {
     font-size: 2rem;
+    display: block;
+    transition: all 2s ease;
+    margin-top: 100px;
+    opacity: 0;
+    &.thing {
+      margin-top: 0;
+      opacity: 1;
+    }
   }
 
   p {

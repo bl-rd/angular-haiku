@@ -9,7 +9,15 @@ function haikuComponent() {
   };
 
   function haikuController() {
-    
+    let self = this;
+
+    this.$onInit = function() {
+      
+    };
+
+    this.$onChanges = function(change) {
+      
+    }
   }
 
   return component;
