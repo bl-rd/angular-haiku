@@ -1,10 +1,17 @@
-$back: #ededed;
-$fore: #333;
+$back: #FD5B78;
+$dark-back: #DC5B6C;
+$mid: #D17BD8;
+$fore: #24F1ED;
+$light-fore: #C5FAFC;
+
+$main: $mid;
+$highlight: $fore;
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Archivo Black', sans-serif;
+  color: $highlight;
 }
 
 li {
@@ -15,7 +22,7 @@ li {
   width: 100vw;
   height: 100vh;
   // overflow: hidden;
-  background: $back;
+  background: $main;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,8 +32,8 @@ li {
 .haiku {
   li {
     font-size: 2rem;
-    @media only screen and (max-width: 450px) {
-      font-size: 1.5rem;
+    @media only screen and (max-width: 600px) {
+      font-size: 1.25rem;
     }
     display: block;
     transition: all 2s ease;
@@ -48,4 +55,9 @@ li {
 .controller {
   position: absolute;
   top: 80vh;
+  background: $highlight;
+  color: $main;
+  padding: 1rem 2rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
