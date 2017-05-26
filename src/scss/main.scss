@@ -25,13 +25,16 @@ li {
 .haiku {
   li {
     font-size: 2rem;
+    @media only screen and (max-width: 450px) {
+      font-size: 1.5rem;
+    }
     display: block;
     transition: all 2s ease;
-    margin-top: 100px;
+    margin-top: 6rem;
     opacity: 0;
     &.thing {
-      margin-top: 0;
-      opacity: 1;
+      margin-top: 0.35rem;
+      opacity: 0.9;
     }
   }
 
@@ -40,4 +43,9 @@ li {
     padding: 0.25rem;
     text-align: right;
   }
+}
+
+.controller {
+  position: absolute;
+  top: 80vh;
 }

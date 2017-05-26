@@ -11,7 +11,7 @@ function lineController() {
   let self = this;
 
   this.$onInit = function() {
-    console.log('initialised line', self.index);
+    
     // @todo use the index property to delay the transition...
     let id = `#line-${self.index}`;
     let diff = self.index + 1 * 1.5;
