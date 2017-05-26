@@ -8,7 +8,7 @@
     "postinstall": "jspm install",
     "serve": "hs",
     "scss": "node-sass src/scss/main.scss dist/main.css --output-style=compressed -w",
-    "start": "parallelshell \"npm run scss\" \"npm run serve\"",
+    "start": "concurrently \"npm run scss\" \"npm run serve\"",
     "json": "jspm bundle-sfx dist/makeJson.js dist/makeJson.bundle.js && node dist/makeJson.bundle.js"
   },
   "keywords": [],
@@ -16,6 +16,7 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.8",
+    "concurrently": "^3.4.0",
     "http-server": "^0.10.0",
     "jspm": "^0.16.52",
     "node-sass": "^4.5.3",
