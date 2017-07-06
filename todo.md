@@ -7,7 +7,6 @@ Going to the app will display a random haiku. The user can interact with the app
 ## Structure of the app
 
 - The app will be written using Angular at the front end. 
-- Navigating the app will be done using ui-router
 - There will be a service that controls fetching/transforming the data
 - There will be a top level component, with other elements being sub-components
 
@@ -16,5 +15,5 @@ Going to the app will display a random haiku. The user can interact with the app
 - The data for the app will be served via an API (Firebase)
   - ~~**Idea**: When running locally, serve a .NET core api from localhost (will need to be tied into another application)~~
   - ~~When deploying for production, dynamically create the JSON that will be used...~~
-- Service worker will allow the app to be installed like a native app
+- Service worker will allow the app to be installed like a native app (npm sw-precache)
 - Testing! (Protractor | Mocha)
