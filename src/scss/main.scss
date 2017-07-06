@@ -60,4 +60,8 @@ li {
   padding: 1rem 2rem;
   left: 50%;
   transform: translateX(-50%);
+  cursor: pointer;
+  &:hover {
+    background: darken($highlight, 6%);
+  }
 }
