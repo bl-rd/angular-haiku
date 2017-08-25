@@ -1,9 +1,2 @@
 node_modules/
-
-# this will probably need to be included in production
-!jspm_packages/
-
-jspm_packages/*
-!jspm_packages/system.js
-
 dist/makeJson.bundle.*
