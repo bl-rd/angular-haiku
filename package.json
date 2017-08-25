@@ -9,7 +9,8 @@
     "serve": "hs",
     "scss": "node-sass src/scss/main.scss dist/main.css --output-style=compressed -w",
     "start": "concurrently \"npm run scss\" \"npm run serve\"",
-    "json": "jspm bundle-sfx dist/makeJson.js dist/makeJson.bundle.js && node dist/makeJson.bundle.js"
+    "json": "jspm bundle-sfx dist/makeJson.js dist/makeJson.bundle.js && node dist/makeJson.bundle.js",
+    "bundle": "jspm bundle-sfx src/app.js"
   },
   "keywords": [],
   "author": "",
